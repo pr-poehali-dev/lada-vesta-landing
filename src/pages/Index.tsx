@@ -18,11 +18,11 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: 'Чехлы Премиум Черные',
+    name: 'Чехлы на Лада Веста Премиум 1',
     price: '12 900 ₽',
-    image: 'https://cdn.poehali.dev/projects/885298d3-9442-493c-b56a-ff6b374825c4/files/a42dee78-056c-47d2-a0b5-81362bee73b8.jpg',
-    features: ['Экокожа премиум класса', 'Оранжевая строчка', 'Износостойкие', 'Полный комплект'],
-    color: 'Черный с оранжевой строчкой'
+    image: 'https://cdn.poehali.dev/files/7f680f4e-e02a-49b8-b97b-b37b7654dd3b.jpg',
+    features: ['Экокожа премиум класса', 'Вышивка VESTA', 'Ромбовидная стёжка', 'Полный комплект'],
+    color: 'Черный с белыми вставками'
   },
   {
     id: 2,
