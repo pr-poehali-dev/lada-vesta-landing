@@ -85,7 +85,7 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <img src="https://cdn.poehali.dev/files/797d38ca-9108-42c1-9843-b62d544e149b.png" alt="FRANK" className="h-10" />
+            <img src="https://cdn.poehali.dev/files/797d38ca-9108-42c1-9843-b62d544e149b.png" alt="FRANK" className="h-10 mix-blend-lighten" />
             <div className="hidden md:flex gap-6">
               <button onClick={() => scrollToSection('hero')} className="hover:text-primary transition-colors">Главная</button>
               <button onClick={() => scrollToSection('products')} className="hover:text-primary transition-colors">Товары</button>
@@ -336,7 +336,7 @@ export default function Index() {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <img src="https://cdn.poehali.dev/files/797d38ca-9108-42c1-9843-b62d544e149b.png" alt="FRANK" className="h-12 mb-4" />
+              <img src="https://cdn.poehali.dev/files/797d38ca-9108-42c1-9843-b62d544e149b.png" alt="FRANK" className="h-12 mb-4 mix-blend-lighten" />
               <p className="text-muted-foreground">Премиум чехлы из экокожи для Лада Веста</p>
             </div>
             <div>
