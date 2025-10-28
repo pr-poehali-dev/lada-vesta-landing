@@ -146,7 +146,12 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {products.map((product, idx) => (
               <Card key={product.id} className="overflow-hidden hover:shadow-2xl transition-all hover:scale-105 animate-fade-in" style={{ animationDelay: `${idx * 0.1}s` }}>
-                <div className="aspect-square overflow-hidden bg-white">
+                <div className="aspect-square overflow-hidden bg-white relative">
+                  {product.id === 1 && (
+                    <div className="absolute top-4 right-4 z-10 bg-primary text-primary-foreground px-4 py-2 rounded-full font-semibold text-sm shadow-lg">
+                      Хит продаж
+                    </div>
+                  )}
                   <img 
                     src={product.image} 
                     alt={product.name}
