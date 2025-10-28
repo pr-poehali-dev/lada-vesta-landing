@@ -1,0 +1,29 @@
+{
+  "tests": [
+    {
+      "name": "Test OPTIONS request",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedHeaders": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
+    {
+      "name": "Test order submission",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Иван Тестов",
+        "phone": "+7 (999) 123-45-67",
+        "product": "Чехлы на Лада Веста Премиум 1",
+        "comment": "Тестовая заявка"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
