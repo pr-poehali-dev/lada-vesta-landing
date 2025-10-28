@@ -223,7 +223,44 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="order" className="py-20 px-4 bg-muted/20">
+      <section className="py-20 px-4 bg-muted/20">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Видеообзор установки</h2>
+          <p className="text-center text-muted-foreground text-lg mb-12">Смотрите, как просто установить чехлы самостоятельно</p>
+          
+          <Card className="overflow-hidden">
+            <CardContent className="p-0">
+              <div className="relative aspect-video bg-muted/50">
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
+                  <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center">
+                    <Icon name="Play" className="text-primary ml-1" size={40} />
+                  </div>
+                  <p className="text-muted-foreground">Видеоинструкция по установке чехлов FRANK</p>
+                  <p className="text-sm text-muted-foreground/70">Длительность: 8 минут</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <div className="grid md:grid-cols-3 gap-6 mt-12">
+            {[
+              { step: '1', title: 'Подготовка', desc: 'Распакуйте чехлы и убедитесь в комплектности' },
+              { step: '2', title: 'Установка', desc: 'Следуйте простой инструкции из видео' },
+              { step: '3', title: 'Готово!', desc: 'Наслаждайтесь новым интерьером салона' }
+            ].map((item, idx) => (
+              <div key={idx} className="text-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold">
+                  {item.step}
+                </div>
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="order" className="py-20 px-4">
         <div className="container mx-auto max-w-2xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Оформить заказ</h2>
           <p className="text-center text-muted-foreground text-lg mb-12">Заполните форму и мы свяжемся с вами</p>
