@@ -181,7 +181,49 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="order" className="py-20 px-4">
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Преимущества экокожи</h2>
+          <p className="text-center text-muted-foreground text-lg mb-12">Почему наши чехлы лучше обычных</p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: 'Sparkles',
+                title: 'Не впитывает запахи',
+                desc: 'Экокожа не впитывает посторонние запахи, легко очищается влажной салфеткой'
+              },
+              {
+                icon: 'Droplet',
+                title: 'Водоотталкивающая',
+                desc: 'Материал не пропускает воду, защищает родную обивку от пятен'
+              },
+              {
+                icon: 'Thermometer',
+                title: 'Не трескается',
+                desc: 'Выдерживает температуры от -40°C до +60°C без деформации'
+              },
+              {
+                icon: 'Heart',
+                title: 'Гипоаллергенная',
+                desc: 'Безопасна для здоровья, не вызывает аллергических реакций'
+              }
+            ].map((item, idx) => (
+              <Card key={idx} className="text-center hover:shadow-xl transition-all hover:scale-105 animate-fade-in" style={{ animationDelay: `${idx * 0.1}s` }}>
+                <CardContent className="pt-8 pb-6 px-6">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Icon name={item.icon as any} className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="order" className="py-20 px-4 bg-muted/20">
         <div className="container mx-auto max-w-2xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Оформить заказ</h2>
           <p className="text-center text-muted-foreground text-lg mb-12">Заполните форму и мы свяжемся с вами</p>
