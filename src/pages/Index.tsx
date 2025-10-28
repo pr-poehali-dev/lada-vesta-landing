@@ -19,7 +19,7 @@ const products: Product[] = [
   {
     id: 1,
     name: 'Чехлы на Лада Веста Премиум 1',
-    price: '12 900 ₽',
+    price: '8 900 ₽',
     image: 'https://cdn.poehali.dev/files/7f680f4e-e02a-49b8-b97b-b37b7654dd3b.jpg',
     features: ['Экокожа премиум класса', 'Вышивка VESTA', 'Ромбовидная стёжка', 'Полный комплект'],
     color: 'Черный с белыми вставками'
@@ -27,7 +27,7 @@ const products: Product[] = [
   {
     id: 2,
     name: 'Чехлы на Лада Веста Премиум 2',
-    price: '13 900 ₽',
+    price: '8 900 ₽',
     image: 'https://cdn.poehali.dev/files/9e9977e4-c1bf-4d80-9aa5-a8ee66b28e51.jpg',
     features: ['Спортивный дизайн', 'Вышивка VESTA', 'Оранжевые вставки', 'Полный комплект'],
     color: 'Черный с оранжевыми вставками'
@@ -35,7 +35,7 @@ const products: Product[] = [
   {
     id: 3,
     name: 'Чехлы на Лада Веста Люкс с Сотами',
-    price: '14 900 ₽',
+    price: '9 900 ₽',
     image: 'https://cdn.poehali.dev/files/738659c5-0fb5-4451-8a33-ec8cbc6495ba.jpg',
     features: ['Уникальная сотовая перфорация', 'Вентиляция спины', 'Серые вставки', 'Полный комплект'],
     color: 'Черный с серыми сотами'
