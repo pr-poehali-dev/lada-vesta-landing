@@ -92,9 +92,9 @@ export default function Index() {
               <button onClick={() => scrollToSection('order')} className="hover:text-primary transition-colors">Заказ</button>
               <button onClick={() => scrollToSection('reviews')} className="hover:text-primary transition-colors">Отзывы</button>
             </div>
-            <a href="tel:+79991234567" className="flex items-center gap-2 text-primary">
-              <Icon name="Phone" size={20} />
-              <span className="hidden sm:inline">+7 (999) 123-45-67</span>
+            <a href="mailto:Frankbyboy@yandex.ru" className="flex items-center gap-2 text-primary hover:underline">
+              <Icon name="Mail" size={20} />
+              <span className="hidden sm:inline">Frankbyboy@yandex.ru</span>
             </a>
           </div>
         </div>
@@ -379,19 +379,15 @@ export default function Index() {
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p className="flex items-center gap-2">
-                  <Icon name="Phone" size={16} />
-                  +7 (999) 123-45-67
-                </p>
-                <p className="flex items-center gap-2">
+                <a href="mailto:Frankbyboy@yandex.ru" className="flex items-center gap-2 hover:text-primary transition-colors">
                   <Icon name="Mail" size={16} />
-                  info@vestacovers.ru
-                </p>
+                  Frankbyboy@yandex.ru
+                </a>
               </div>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Работаем</h4>
-              <p className="text-muted-foreground">Пн-Вс: 9:00 - 21:00</p>
+              <h4 className="font-semibold mb-4">Режим работы</h4>
+              <p className="text-muted-foreground">Ответим на все вопросы по почте</p>
             </div>
           </div>
           <div className="text-center text-muted-foreground text-sm border-t border-border pt-8">
